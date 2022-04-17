@@ -7,7 +7,7 @@ from hellodjangoapp.models import Customer
 from hellodjangoapp.models import Market
 
 def homePageView(request):
-    return HttpResponse('Hello, Django!')
+    return HttpResponse('Welcome to Django Application!, Your are Currently viewing Django based application running on port 8000!')
 
 
 def numbers_show(request):
