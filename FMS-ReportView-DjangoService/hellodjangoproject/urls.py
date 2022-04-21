@@ -22,4 +22,7 @@ urlpatterns = [
     path('', include('hellodjangoapp.urls')),
     path('list/', include('hellodjangoapp.urls')),
     path('studentlist/', include('hellodjangoapp.urls')),
+    path('customerlist/', include('hellodjangoapp.urls')),
+    path('marketlist/', include('hellodjangoapp.urls')),
+    path('reportlist/', include('hellodjangoapp.urls')),
 ]
