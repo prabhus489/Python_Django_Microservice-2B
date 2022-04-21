@@ -74,12 +74,18 @@ WSGI_APPLICATION = 'hellodjangoproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "ScalableMicroService",
+        'USER': "admin",
+        'PASSWORD': "Nevershare@123",
+        'HOST': "us-west-2.fa6fca4b-3c0f-45e2-8e9d-029747d86672.aws.ybdb.io",
+        'PORT': "5433",  # 5432 by default, for yugabytecloud ysql postgres port number is 5433
 }
+}
+
 
 
 # Password validation
