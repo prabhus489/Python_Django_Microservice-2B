@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydjangoapp-deploy
+  labels:
+    app: mydjangoapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mydjangoapp
+  template:
+    metadata:
+      labels:
+        app: mydjangoapp
+    spec:
+      containers:
+      - name: mydjangoapp
+        image: prabhu12yuva/fsm-appx:mydjangoapp3
+        ports:
+        - containerPort: 8000
